@@ -12,6 +12,12 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 
 import axios from 'axios'
+
+
+import ZkTable from 'vue-table-with-tree-grid'
+
+Vue.component('zk-table', ZkTable)
+
 // 配置请求的跟路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/';
 axios.interceptors.request.use(config => {
