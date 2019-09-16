@@ -1,12 +1,23 @@
 // 基本登录，和主页面试页面
 import Vue from 'vue'
 import Router from 'vue-router'
+// 登录界面
 import login from './components/login.vue'
+// 主页面
 import home from './components/home.vue'
+// 登录成功界面
 import welcome from './components/welcome.vue'
 
 // 用户列表显示页面
 import users from './components/user/users.vue'
+
+// 权限列表页面
+import rights from './components/power/rights.vue'
+
+// 角色列表区域
+import roles from './components/power/roles.vue'
+
+
 
 
 Vue.use(Router)
@@ -21,7 +32,9 @@ const router = new Router({
             redirect: '/welcome',
             children: [
                 { path: '/welcome', component: welcome },
-                { path: '/users', component: users }
+                { path: '/users', component: users },
+                { path: '/rights', component: rights },
+                { path: '/roles', component: roles }
             ]
         }
 
