@@ -20,6 +20,8 @@ import roles from './components/power/roles.vue'
 // 商品分类区域
 import cate from './components/goods/cate.vue'
 
+// 分类参数区域
+import params from './components/goods/params.vue'
 
 Vue.use(Router)
 
@@ -37,6 +39,7 @@ const router = new Router({
                 { path: '/rights', component: rights },
                 { path: '/roles', component: roles },
                 { path: '/categories', component: cate },
+                { path: '/params', component: params },
             ]
         }
 
