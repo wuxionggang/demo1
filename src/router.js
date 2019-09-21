@@ -31,6 +31,9 @@ import add from './components/goods/add.vue'
 // 订单管理区域
 import order from './components/order/order.vue'
 
+// 数据统计区域
+import report from './components/report/report.vue'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -51,6 +54,7 @@ const router = new Router({
                 { path: '/goods', component: list },
                 { path: '/goods/add', component: add },
                 { path: '/orders', component: order },
+                { path: '/reports', component: report },
             ]
         }
 
