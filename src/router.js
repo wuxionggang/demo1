@@ -23,6 +23,14 @@ import cate from './components/goods/cate.vue'
 // 分类参数区域
 import params from './components/goods/params.vue'
 
+// 商品列表区域
+import list from './components/goods/list.vue'
+// 商品添加界面
+import add from './components/goods/add.vue'
+
+// 订单管理区域
+import order from './components/order/order.vue'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -40,6 +48,9 @@ const router = new Router({
                 { path: '/roles', component: roles },
                 { path: '/categories', component: cate },
                 { path: '/params', component: params },
+                { path: '/goods', component: list },
+                { path: '/goods/add', component: add },
+                { path: '/orders', component: order },
             ]
         }
 
